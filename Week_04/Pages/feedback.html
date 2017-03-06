@@ -1,0 +1,89 @@
+<!--Homework Assignment Elicia Lim [feedback page]-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title>Comment</title>
+        <style>
+            table, th, td 
+            {
+                border: 1px solid grey;
+            }
+        </style>
+    </head>
+    
+    <body style="background-color:grey;">
+        
+        <!-- nav tag-->
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="../Pages/Gameplay.html">roTopo</a> |
+            <a href="../Pages/Video.html">Video</a> 
+        </nav> 
+        <hr/> <!--draws a line-->
+        <!----------------------------------------------------------------------->
+        
+        <!--Background audio-->
+        <div>
+            <audio src="../Audio/BG_mystic_piano.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+        
+        <div>
+            <h3>Let me know what you think!</h3>
+            <!--forms-->
+            <form>
+                <p>Title:</p>
+                <!--Select tag makes dropdown-->
+                <!--Option tag makes the options-->
+                <select>
+                    <option>Mr</option>
+                    <option>Mdm</option>
+                    <option>Ms</option>
+                    <option>Miss</option>
+                </select>
+            </form>
+            <form>
+                <p>Name:</p>
+                <input type = "text" placeholder="Enter Name here">
+            </form>
+            <form>
+                <p>Email:</p>
+                <input type = "text" placeholder="Enter Email here" maxlength="50">
+            </form>
+            <form>
+                <p>What do you think of my response? <small>(1=Lowest, 5=Highest)</small></p>
+                <input type="radio" name="rating" value="1">1
+                <input type="radio" name="rating" value="2">2
+                <input type="radio" name="rating" value="3">3
+                <input type="radio" name="rating" value="4">4
+                <input type="radio" name="rating" value="5">5
+            </form>
+            
+            <!--comment box-->
+            <form>
+            <p>Reason for the rating: </p>
+            <textarea placeholder="Tell me your reason for the rating..."></textarea>
+            </form>
+            
+            <br/>
+            <!--check box-->
+            <form>
+                <input type= "checkbox">Yes, please contact me.
+            </form>           
+            
+            <br/>
+            
+            <!--submit button-->
+            <form>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </div>
+        
+        <hr/> <!--draws a line-->
+        <hr/> <!--draws a line-->
+        
+    </body>
+</html>
