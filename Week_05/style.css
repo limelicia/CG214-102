@@ -1,0 +1,100 @@
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+#tablefont
+{
+    color: red;
+    font-family: monospace, "georgia";
+    font-size: 12px;
+}
+
+#rightalign
+{
+    text-align: right;
+}
+
+#arrowColor
+{
+    color: lightblue;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*classes for multiple elements*/
+/*red font*/
+.fontOne
+{
+    color: red;
+}
+
+/*classes for multiple elements | highlighting*/
+/*grey background*/
+.highlightOne
+{
+    background-color: lightgrey;
+    border-radius: 1px 3px;
+}
+
+.redfont
+{
+    color:orangered;
+}
+.greenfont
+{
+    color: lawngreen;
+}
+.bluefont
+{
+    color: dodgerblue;
+}
+
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+body 
+{
+    background-color: black;
+    color: white;
+    font-family: "verdana", sans-serif; /*https://www.w3schools.com/css/css_font.asp*/
+    font-size: 14px;
+}
+
+
+/*table style, border, color*/
+table, th, td 
+{
+    border: 0.5px dashed grey;
+}
+
+/*style all standalonelinks*/
+a
+{
+    color: yellow;
+}
+
+/*style all nav links*/
+nav a
+{
+    color: deepskyblue;
+}
+
+/*hover image*/
+img 
+{
+    border-radius: 2px;
+    padding: 5px;
+   
+}
+img:hover 
+{
+    box-shadow: 0 0 2px 1px rgba(0, 228,255, 0.8);
+}
+
+/*hover inputs*/
+textarea:hover, input:hover 
+{
+    box-shadow: 0 0 2px 1px rgba(0, 228,255, 0.8);
+}
+/*----------------------------------Selectors & declarations----------------------------------*/
+
