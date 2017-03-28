@@ -1,0 +1,146 @@
+/*box-sizing property*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+#menu {
+    max-height: 200px;
+    /*background*/
+    background-image: url('../../Images/dove2.jpg');
+    background-size:cover;
+    background-color: black;
+    /*border*/
+	padding:20px;
+    
+	/*font*/
+
+    color: white;
+    
+}
+#container {
+	max-width: 1300px;
+	min-width: 700px;
+	min-height: 600px;
+	/*use margin auto on both sides to center the content horizontally*/
+	margin-left: auto;
+	margin-right: auto;
+    font-family: Macondo, cursive;
+    background-color: #dedbdb;
+
+}
+
+
+/*----------------------------------# Unique ID----------------------------------*/
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*.classes for multiple elements*/
+/*class for columns*/
+
+.div1 {
+
+/*	 background-color: #f46a38;*/
+/*     	 width: 380px;*/
+	 float: left;
+     	 min-height: 450px;
+	 /*also show percentage widths instead of px*/
+	 width: 43%; 
+
+/*	 padding: 15px;*/
+/*	 margin: 5px;*/
+
+}
+
+.div2 {
+
+/*	 background-color: #42f4ee;*/
+/*     	 width: 380px;*/
+	 float: right;
+    	 min-height: 450px;
+	 /*also show percentage widths instead of px*/
+	 width: 55%;
+/*	 padding: 15px;*/
+/*	 margin: 5px;*/
+   
+}
+
+
+
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+/*page title*/
+h1
+{
+    font-size: 70px;text-align: center;
+    
+}
+/*subtitle*/
+h3
+{
+    text-align: center;
+}
+/*figure caption style*/
+figcaption
+{
+    font-size: 10px;
+}
+/*style p and img tags*/
+h6 img
+{
+    float:left;width:150px;border-radius: 50%;margin:40px;
+}
+/*change opacity when hover over <p> tag*/
+h6 img:hover {
+		opacity: .6;
+ -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+
+}
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+
+
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/

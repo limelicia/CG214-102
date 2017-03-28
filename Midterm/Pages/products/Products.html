@@ -1,0 +1,131 @@
+<!--Homework Assignment Elicia Lim Midterm [gears]-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> Swoop Away </title>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--linking to external css file-->
+        <link href="style_product.css" type="text/css" rel="stylesheet">
+       
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body id="container">
+
+        <hr/> <!--draws a line-->
+         <!--Background audio-->
+        <div>    
+            <audio src="../../Audio/Ambient-background-music.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+        <!----------------------------------------------->
+        <!--HEADER-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> <!--&#9776; = 3 lines-->
+        <div id="menu">
+            <h1 class="page-title">SWOOP</h1>
+            
+        </div>
+
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../features/Features.html">About Us</a>
+        <a href="../contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+        <br>
+        
+        <div class="alignP">
+            <p>We are currently in the production stage. Products will be available in <strong>May 2017</strong>. 
+                <br>
+                If you are interested in our products, please register your interest in our 'Contact' page. We will notify you once we launch. 
+                <br>
+                Of course, you will be given <i><u>priority</u></i> if you register now.
+            </p>
+        </div>
+        <!--image modal-->
+        <div>
+        <table border="1">
+            <tr>
+                <th><img id="myImg" src="../../Images/slideshow/blackwhite_pair.jpg" alt="Black&White, Swoop" width="410"></th>
+                <th><img id="myImg2" src="../../Images/slideshow/blue_pair.jpg" alt="Blue&Gold, Swoop" width="410"></th>
+                <th><img id="myImg3" src="../../Images/slideshow/grey_pair.jpg" alt="Silver&Black,Swoop" width="410"></th>
+            </tr>
+        </table>
+        </div>
+            
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+        <!--image modal-->
+        
+        <!--columns end-->
+
+        <!--Javascript-->
+        <script>
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+//      -----------------------------------------------Javascript modal img from w3schools----------------------------------------------            
+            // Get the modal 
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption, for img 1
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        // Get the image and insert it inside the modal - use its "alt" text as a caption, for img 2
+        var img = document.getElementById('myImg2');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        // Get the image and insert it inside the modal - use its "alt" text as a caption, for img 3
+        var img = document.getElementById('myImg3');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+//      -----------------------------------------------Javascript modal img from w3schools----------------------------------------------  
+</script>
+    </body>
+</html>

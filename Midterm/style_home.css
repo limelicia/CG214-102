@@ -1,0 +1,265 @@
+/*box-sizing property*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+#menu {
+    max-height: 200px;
+    /*background*/
+    background-image: url('Images/dove1.jpg');
+    background-size:cover;
+    background-color: black;
+    /*border*/
+	padding:20px;
+    
+	/*font*/
+
+    color: white;
+    
+}
+#container {
+	max-width: 1300px;
+	min-width: 700px;
+	min-height: 600px;
+	/*use margin auto on both sides to center the content horizontally*/
+	margin-left: auto;
+	margin-right: auto;
+    font-family: Macondo, cursive;
+    background-color: #dedbdb;
+
+}
+
+
+/*----------------------------------# Unique ID----------------------------------*/
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*.classes for multiple elements*/
+/*-----------------------------animation from w3schools-----------------------------*/
+.linearAnimation
+{color:#4d004d;
+/*
+    width: 10px;
+    height: 10px;
+*/
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    100%  { left:120px; top:0px;opacity: 0.4}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    100%  {left:120px; top:0px;opacity: 0.4}
+  
+}
+.linearAnimation2
+{color:#004d4d;
+/*
+    width: 10px;
+    height: 10px;
+*/
+    position: relative;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {left:120px; top:0px;opacity: 0.4}
+    100%  { left:0px; top:0px;}
+
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {left:120px; top:0px;opacity: 0.4}
+    100%  {left:0px; top:0px;}
+  
+}
+/*-----------------------------animation-----------------------------*/
+/*columns*/
+#div1 {
+
+    font-size: 20px;
+	 float: left;
+/*     	 min-height: 150px;*/
+	 /*also show percentage widths instead of px*/
+	 width: 25%; 
+
+/*background-color: #D8E2ED;*/
+}
+
+#div2 {
+
+
+	 float: center;
+/*    	 min-height: 150px;*/
+	 /*also show percentage widths instead of px*/
+	 width: 45%;
+/*background-color: #D8E2ED;*/
+   
+}
+#div3 {
+font-size: 20px;
+	 float: right;
+/*    	 min-height: 150px;*/
+	 /*also show percentage widths instead of px*/
+	 width: 25%;
+/*background-color: #D8E2ED;*/
+   
+}
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+/*Links format*/
+/*
+a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #D8E2ED;
+	color: #FF6661;
+}
+*/
+h1
+{
+    font-size: 70px;
+    text-align: center;
+}
+/*----------------------------------Selectors & declarations from w3schools----------------------------------*/
+
+/*----------------------------------Slide Show from w3schools------------------------------------------------*/
+.mySlides {display:none}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position:relative;
+  margin: auto;
+    
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*----------------------------------Slide Show from w3schools------------------------------------------------*/
+
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*----------------------------------Sidebar---------------------------------------------------*/
