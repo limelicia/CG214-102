@@ -1,0 +1,133 @@
+<!--Homework Assignment Elicia Lim Midterm [contact]-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> Contact Swoop </title>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--linking to external css file-->
+        <link href="style_contact.css" type="text/css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body id="container">
+
+        <hr/> <!--draws a line-->
+ 
+        <!----------------------------------------------->
+        <!--HEADER-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> <!--&#9776; = 3 lines-->
+        <div id="menu">
+            <h1 class="page-title">SWOOP</h1>
+            
+        </div>
+        
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../features/Features.html">About Us</a>
+        <a href="../products/Products.html">Gears</a>
+        </div>
+        <!--side bar-->
+        <br>
+        <!--Background audio-->
+        <div>    
+            <audio src="../../Audio/Ambient-background-music.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+        <!---------Columns----------->
+        
+         <!--columns-->
+<!--Product explaination-->
+		<div class="div1">
+			<p>Thank you for your interest in SWOOP.</p>
+            
+            <!--forms-->
+            <form>
+                <h4>Register your interest here:</h4>
+                <p>Title:</p>
+                <!--Select tag makes dropdown-->
+                <!--Option tag makes the options-->
+                <select>
+                    <option>Mr</option>
+                    <option>Mdm</option>
+                    <option>Ms</option>
+                    <option>Miss</option>
+                </select>
+            </form>
+            <form>
+                <p>Name:</p>
+                <input type = "text" placeholder="Enter Name here">
+            </form>
+            <form>
+                <p>Email Address:</p>
+                <input type = "text" placeholder="Enter Email here" maxlength="50">
+            </form>
+            <br/>
+            <!--check box-->
+            <form>
+                <p>Select the Shoes Color(s)</p>
+                <input type= "checkbox">Black/White
+                <input type= "checkbox">Blue/Gold
+                <input type= "checkbox">Silver/Black
+            </form>           
+            
+            <br/>
+            
+            <!--submit button-->
+<!--
+            <form>
+                <a href="https://www.nytimes.com/" target="_blank"><button>Submit</button></a>
+            </form>
+-->
+            <form>
+            <input type="submit" value="Submit" onclick="msg()"> <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_html_click-->
+                </form>
+            
+<!--              <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">-->
+		</div>
+        
+<!--Video-->
+        <div class="div2">
+			<h3>Locate Us</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.66083220619!2d-73.99727068509436!3d40.747488043381544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afbb64db0d%3A0x863a71d6d4af1f09!2sFashion+Institute+of+Technology!5e0!3m2!1sen!2sus!4v1490605414794" width="450" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>Tel: +1 (212) 217-7999</p>
+            <p>Email: contact@swoop.com</p>
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/"target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com"target="_blank" class="fa fa-twitter"></a>
+		</div>
+        
+        
+        <!--columns end-->
+
+        <!--Javascript-->
+        <script>
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+            
+            //javascript submit button w3schools
+            function msg() 
+            {
+                confirm("We will contact you soon"); //https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_button
+            }
+</script>
+    </body>
+</html>

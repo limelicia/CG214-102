@@ -1,0 +1,159 @@
+<!--Homework Assignment Elicia Lim Midterm-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> Swoop! </title>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--linking to external css file-->
+        <link href="style_home.css" type="text/css" rel="stylesheet">
+       
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body id="container">
+        
+        <!-- nav tag-->
+        <!--id for linking back to this part of page-->
+<!--
+        <nav>
+            <a href="index.html" id="top">Home</a> |  
+            <a href="Pages/?.html">Features</a> |
+            <a href="Pages/?.html">Product</a> |
+            <a href="Pages/?.html">Contact</a>
+        </nav> 
+-->
+       <!--Background audio-->
+        <div>    
+            <audio src="/Audio/Ambient-background-music.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+        
+        <hr/> <!--draws a line-->
+ 
+        <!----------------------------------------------->
+        <!--HEADER-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> <!--&#9776; = 3 lines-->
+        <div id="menu">
+            <h1 class="page-title">SWOOP</h1>
+            
+
+        </div>
+        <br>
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Pages/features/Features.html">About Us</a>
+        <a href="Pages/products/Products.html">Gears</a>
+        <a href="Pages/contact/Contact.html">Contact</a>
+        </div>
+        
+         <div id="div1"><br>
+             <p class="linearAnimation">NEW INVENTION</p><br><br>
+             <p class="linearAnimation2">LATEST TECHNOLOGY</p><br><br>
+            
+             <p class="linearAnimation">FUTURE is NOW</p>
+        </div>
+        
+        <div id="div3"><br>
+            <p class="linearAnimation2">REDEFINES TRAVEL</p><br><br>
+            <p class="linearAnimation">SHOES that FLY</p><br><br>
+            <p class="linearAnimation2">ANTI-GRAVITY</p>
+        </div>
+        <!--side bar-->
+        <!---------------------------------------------slide show from w3schools--------------------------------------------->
+        <div class="slideshow-container" id="div2">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="blackwhite.jpg" >
+<!--              <div class="text">Caption Text</div>-->
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="blackwhite_pair.jpg" >
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="blue.jpg" >
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="blue_pair.jpg">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="grey.jpg">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <img src="grey_pair.jpg" >
+            </div>
+
+        </div>
+        <br>
+
+        <div class="slideshow-container" style="text-align:center"id="div2">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <!---------------------------------------------slide show from w3schools--------------------------------------------->
+        
+       
+        
+        <!--Javascript-->
+        <script>
+            
+//      -----------------------------------------------Javascript slide show from w3schools----------------------------------------------
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() 
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) 
+            {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) 
+            {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+//      -----------------------------------------------Javascript slide show from w3schools----------------------------------------------
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+</script>
+    </body>
+</html>

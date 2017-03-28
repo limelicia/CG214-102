@@ -1,0 +1,121 @@
+<!--Homework Assignment Elicia Lim Midterm |about us|-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> Swoop Factor </title>
+        <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--linking to external css file-->
+        <link href="style_features.css" type="text/css" rel="stylesheet">
+       
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body id="container">
+
+        <hr/> <!--draws a line-->
+ 
+        <!----------------------------------------------->
+        <!--HEADER-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span> <!--&#9776; = 3 lines-->
+        <div id="menu">
+            <h1 class="page-title">SWOOP</h1>
+            
+        </div>
+        
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../products/Products.html">Gears</a>
+        <a href="../contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+        <br>
+        <!--Background audio-->
+        <div>    
+            <audio src="../../Audio/Ambient-background-music.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+        <!--columns-->
+<!--Product explaination-->
+		<div class="div1">
+			<h3>The Chronicles of SWOOP</h3>
+            <p><img src="https://s-media-cache-ak0.pinimg.com/736x/ea/8d/69/ea8d69f8a602d2085db3564fc2e1aa5e.jpg" alt="Linda Richards" style="float:left;width:130px;padding: 10px;">
+                SWOOP is the product of the FUTURE, changing the way <strong><u>we</u></strong> travel. 
+                <br>
+                Our founder and scientist, Linda Richards, had been working closely with scientists and engineers for the past 20 years, experimenting various anti-gravity possibilities. It was only in May 2016 that they had the breakthrough they had been waiting for...
+                <br>
+                We are very excited to share with you our new product (right), the SWOOP. The SWOOP is a shoe with anti-gravity properties. As defined by its name, SWOOP is a smart technology product that allows its wearer to manuever its speed of ascend and descend, sometimes mimicking the movement of a bird descending rapidly through the air.  
+            </p>
+            <h3>The SWOOP Elements</h3>
+            <ul style="list-style-type:square">
+                <img src="../../Images/chip.JPG" alt="Chip" style="float:right;width:150px;">
+                The SWOOP is:
+                <li>shoe with a built-in anti-gravity technology</li> 
+                <li>a solar chip attached to the design</li> 
+                <li>waterproof</li> 
+                <li>light-weight</li>
+                <li>made up of extremely breathable fabric and materials</li> 
+            </ul>
+             
+            <h3>The Power of SWOOP</h3>
+            <ol type ="I"> <!--Uppercase Roman Numbers-->
+                The SWOOP has:
+                <li>a solar chip that recharges from converting air pollutants to energy</li> 
+                <li>a cushioned lining that has the intelligence to analyse the joints of the feet to determine direction</li> 
+                <li>an outsole that vacuums the surrounding air, allowing wearer to hover on air</li> 
+            </ol>
+            
+		</div>
+        
+<!--Video-->
+        <div class="div2">
+			<h3>SWOOP the Flight</h3>
+			<iframe width="672" height="378" src="https://www.youtube.com/embed/ttlWiaowTe8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <h6 style="cursor:crosshair">
+                <img src="../../Images/slideshow/blackwhite.jpg" alt="Shoe">
+                <img src="../../Images/slideshow/blue.jpg" alt="Shoe">
+                <img src="../../Images/slideshow/grey.jpg" alt="Shoe">
+            </h6>
+            
+		</div>
+        
+<!--
+        <div class="roundedimage">
+			hello
+		</div>
+
+		<div class="roundedimage">
+			my name
+		</div>
+
+		<div class="roundedimage">
+			is
+		</div>
+-->
+        
+        <!--columns end-->
+
+        <!--Javascript-->
+        <script>
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+</script>
+    </body>
+</html>
