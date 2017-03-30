@@ -162,8 +162,8 @@ h1
   position:relative;
   margin: auto;
     /*https://www.w3schools.com/cssref/css3_pr_resize.asp*/
-    resize:both;
-    overflow:scroll;
+   /*resize:both;
+    overflow:scroll;*/
 }
 
 /* Caption text */
