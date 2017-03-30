@@ -37,24 +37,6 @@
 /*.classes for multiple elements*/
 /*class for columns*/
 
-.div1 {
-
-	 float: left;
-     min-height: 450px;
-	 /* show percentage widths instead of px*/
-	 width: 43%; 
-
-}
-
-.div2 {
-
-	 float: right;
-     min-height: 450px;
-	 /*show percentage widths instead of px*/
-	 width: 55%;
-   
-}
-
 .alignP
 {
     text-align:left;
