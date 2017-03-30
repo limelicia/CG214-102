@@ -94,7 +94,7 @@ h6 img
 }
 /*change opacity when hover over <p> tag*/
 h6 img:hover {
-		opacity: .6;
+		/*opacity: .6;*/
  -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
     transform: rotate(-7deg);
