@@ -161,7 +161,9 @@ h1
   max-width: 600px;
   position:relative;
   margin: auto;
-    
+    /*https://www.w3schools.com/cssref/css3_pr_resize.asp*/
+    resize:both;
+    overflow:scroll;
 }
 
 /* Caption text */
