@@ -1,0 +1,110 @@
+<!--Homework Assignment Elicia Lim Midterm-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> Elicia Lim </title>
+<!--       <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|UnifrakturCook:700" rel="stylesheet"> 
+        <!--linking to external css file-->
+        <link href="style_home.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="Images/icon.png">
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body>
+  
+        <!--Background audio-->
+    <!--       credit: Music: http://www.bensound.com-->
+            <audio src="Audio/bensound-pianomoment.mp3" type="audio/mpeg" autoplay loop></audio>
+      
+        <div>
+            <div  class="overlay2" id="animationslide">
+<!--
+                <span class="apppear1">.</span>
+                <span>.</span>
+                <span>.</span>
+-->
+
+            </div>
+        </div>
+ 
+        <!----------------------------------------------->
+        <!--HEADER-->
+        
+        <div class="container">
+            <header onclick="openNav()">&#9776; </header> <!-- &#9776; = draw 3 lines-->
+            
+            <section class="myportrait" style="cursor:crosshair">
+<!--                <img src="Images/myportrait.png" alt="Portrait">-->
+            </section>
+<!--
+            <section class="myportrait2" style="cursor:crosshair">
+
+            </section>
+-->
+<!--            <section class="bgimage"> </section>-->
+            
+            
+            <table>
+                <tr>
+                    <th>Elicia Lim</th>
+                </tr>
+            
+                <tr>
+                    <td>Accessories</td>
+                </tr>
+                <tr>
+                    <td>Designer</td>
+                </tr>
+            </table>
+
+        </div>
+
+        
+        
+        
+        <footer>
+<!--		  <div>&copy; 2017 ELICIA LIM, ALL RIGHTS RESERVED.</div>-->
+            <div>&copy; 2017 Elicia Lim, All Rights Reserved.</div>
+        </footer>
+        
+        
+        
+        
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Pages/about/About.html">Biography </a>
+            <br/>
+        <a href="Pages/myworks/myworks.html">My Works</a>
+            <br/>
+        <a href="Pages/involvements/involvements.html">Activities</a>
+            <br/>
+        <a href="Pages/contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+
+        
+        <!--Javascript-->
+        <script>
+       
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+</script>
+    </body>
+</html>

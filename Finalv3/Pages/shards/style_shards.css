@@ -1,0 +1,329 @@
+/*box-sizing property*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+
+
+
+/*----------------------------------# Unique ID----------------------------------*/
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*.classes for multiple elements*/
+.container {
+    max-width:1000px;
+    min-width: 500px;
+/*    max-height: 800px;*/
+    min-height: 550px;
+    margin:40px auto 40px auto;
+  
+/*    background-color: none;*/
+/*
+    background: url('https://s-media-cache-ak0.pinimg.com/736x/e4/ca/e9/e4cae923b0f7bb8559f04f7d5b6af258.jpg');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-repeat: repeat;
+*/
+
+  position:relative;
+    padding: 10px;
+/*  border: 1px dotted black;*/
+}
+.containerHeader {
+    max-width:1000px;
+    min-width: 500px;
+/*    min-height: 550px;*/
+    margin:40px auto 40px auto;
+  position:relative;
+    padding: 10px;
+}
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+html {
+    background: url('../../Images/bgImage_about.jpg'); /*Designed by Freepik | http://www.freepik.com/index.php?goto=74&idfoto=1111622*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    background-repeat: repeat;
+   
+}
+body
+{
+    font-family: 'Cinzel', serif;
+    
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 10px;
+    border-top: dashed 1.2px ;
+    text-align: right;
+    font-weight: 600;
+}
+header /*sidebar*/
+{
+    position:fixed;
+    top:0;
+    left:0;
+    border-top: dashed 1.2px;
+    text-align: right;
+    
+    font-size:30px;
+    cursor:pointer;
+/*    color:#8597a1;*/
+    opacity: 0.8;
+/*    text-shadow: 3px 3px 3px #7e8b95;*/text-shadow: 2px 2px 2px #313a41;
+    
+    
+}
+h1
+{
+    text-shadow: 2px 2px 2px #313a41;
+    display: inline-block;
+    position: relative;
+    left: 150px;
+}
+p
+{
+    position: absolute;
+    font-weight: 600;
+    font-size: 60px;
+    right: 30px;
+    top: -20px;
+    text-shadow: 1.5px 1.5px 1.5px #313a41;
+    display: inline-block;
+}
+p a 
+{
+    text-decoration: none;
+    color: black;
+}
+p a:hover
+{
+    opacity: 0.5;
+}
+img
+{
+    border: 2px grey solid;
+/*   position: relative;*/
+    margin: 10px;
+    
+    box-shadow: 0.8px 0.8px 0.8px #909191;
+/*    right: 0px;*/
+/*    left: 50%;*/
+/*    display: inline-block;*/
+}
+.swatches
+{
+    position: relative;
+    top: 25px;
+    left: 150px;
+    display: inline-block;
+    
+}
+a
+{
+    text-decoration:none;
+    color: black;
+    font-size: 60px;
+}
+.backtop:hover
+{
+    opacity: 0.5;
+    
+}
+/*----------------------------------Selectors & declarations from w3schools----------------------------------*/
+.backtop
+{
+    position: fixed;
+    bottom: 30px;
+    right: 180px;
+    text-shadow: 1.5px 1.5px 1.5px #313a41;
+    
+}
+/*slideshow*/
+.photos {
+    width: 100%;
+    border: 1px black solid;box-shadow: 2px 2px 2px #909191;
+}
+#slideshowRo {
+/*  margin: 80px auto;*/
+  position: absolute;
+  width: 130px;
+  height: 130px;
+    top: -30px;
+/*    right: 400px;*/
+/*  padding: 20px 10px s10px 10px;*/
+/*  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);*/
+/*    border: 15px ;*/
+    
+}
+
+#slideshowRo > div {
+  position: absolute;
+/*
+  top:  10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+*/
+}
+/*slideshow*/
+/*----------------------------------parallax scrolling begins----------------------------------*/
+.parallax {
+    /* The image used */
+   background-image: url("../../Images/collections/Shards/shoe1.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("../../Images/collections/Shards/shoe2.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("../../Images/collections/Shards/bag1.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4 {
+    /* The image used */
+    background-image: url("../../Images/collections/Shards/bag2.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax5 {
+    /* The image used */
+    background-image: url("../../Images/collections/Shards/acc1.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax6 {
+    /* The image used */
+    background-image: url("../../Images/collections/Shards/acc2.png");
+/*    background-image: none;*/
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scrollingdiv1 {
+    height:300px;
+    background-color:none;
+    font-size:36px;
+    color:black;
+/*    position: relative;*/
+    text-align: center;
+}
+
+.scrollingdiv2 {
+    height:300px;
+    background-color:white;
+    font-size:36px;
+    color:black;
+/*    position: relative;*/
+    text-align: center;
+}
+
+/*----------------------------------parallax scrolling ends----------------------------------*/
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(133,151,161,0.5);
+/*    background-color: #655f51;*/
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+/*    opacity: 0.5;*/
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #313a41;
+    color: #0b82b4;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f17995;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*----------------------------------Sidebar---------------------------------------------------*/
