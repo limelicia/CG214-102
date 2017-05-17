@@ -1,0 +1,170 @@
+<!--Homework Assignment Elicia Lim Midterm-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> ELI &#124; Rococo </title>
+<!--       <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|UnifrakturCook:700" rel="stylesheet"> 
+        <!--linking to external css file-->
+        <link href="style_rococo.css" type="text/css" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link rel="icon" type="image/png" href="../../Images/icon.png">
+        
+    </head>
+    <!----------------------------------------------->
+    
+    <body>
+  
+        <!--Background audio-->
+    <!--       credit: Music: http://www.bensound.com-->
+            <audio src="../../Audio/bensound-pianomoment.mp3" type="audio/mpeg" autoplay loop></audio>
+      
+    
+ 
+        <!----------------------------------------------->
+        <!--HEADER-->
+        
+        
+        
+        <div class="containerHeader">
+            <header onclick="openNav()">&#9776; </header> <!-- &#9776; = draw 3 lines-->
+            <p><a href="../myworks/myworks.html">&#8617;</a></p>
+            
+            <div id="slideshowRo" >                 
+<!--     Rococo-->
+                   <div>
+                        <img class="photos" src="../../Images/collections/Rococo/inspi4.jpg">
+                   </div>
+                   <div>
+                       <img class="photos" src="../../Images/collections/Rococo/inspi3.jpg">
+                   </div>
+                   <div>
+                       <img class="photos" src="../../Images/collections/Rococo/inspi2.jpg">
+                   </div>
+                   <div>
+                       <img class="photos" src="../../Images/collections/Rococo/inspi1.jpg">
+                   </div>
+            </div>
+            
+            <h1 name="top">Late Baroque</h1>
+<!--            swatches-->
+            <div class = "swatches">
+            <img src="../../Images/collections/Rococo/swatches/swatch1.jpg" height="50" width="50">
+            <img src="../../Images/collections/Rococo/swatches/swatch2.jpg" height="50" width="50">
+            <img src="../../Images/collections/Rococo/swatches/swatch3.jpg" height="50" width="50">
+            <img src="../../Images/collections/Rococo/swatches/swatch4.jpg" height="50" width="50">
+            <img src="../../Images/collections/Rococo/swatches/swatch5.jpg" height="50" width="50">
+            </div>
+            
+            <hr>
+        </div>
+        <div class="container">
+            <div class="backtop">
+                <a href="#top">&#8607;</a>
+            </div>
+<!--            parallax scrolling begins here-->
+            <div class="parallax"></div>
+            <div class="parallax2"></div>
+            <div class="parallax3"></div>
+            <div class="parallax4"></div>
+            <div class="parallax5"></div>
+            <div class="parallax6"></div>
+            <div class="parallax7"></div>
+            <div class="parallax8"></div>
+            <div class="parallax9"></div>
+            <div class="parallax10"></div>
+            <div class="parallax11"></div>
+            <div class="parallax12"></div>
+            <div class="parallax13"></div>
+            <div class="parallax14"></div>
+            <div class="parallax15"></div>
+<!--
+            <div class="scrollingdiv2">
+                Scroll Up and Down this page to see the parallax scrolling effect.
+                This div is just here to enable scrolling.
+                Tip: Try to remove the background-attachment property to remove the scrolling effect.
+            </div>
+-->
+<!--
+            <div class="parallax">
+                <img src="../../Images/collections/Rococo/bag1.jpg">
+                <img src="../../Images/collections/Rococo/bag1.jpg"><img src="../../Images/collections/Rococo/bag1.jpg">
+            </div>
+            <div class="scrollingdiv1">
+                <img src="http://wonderopolis.org/_img?img=/wp-content/uploads/2015/03/1428_F.jpg&transform=resizeCrop,720,450">
+            </div>
+            <div class="scrollingdiv1">
+                <img src="http://wonderopolis.org/_img?img=/wp-content/uploads/2015/03/1428_F.jpg&transform=resizeCrop,720,450">
+            </div>
+-->
+            
+            
+<!--            parallax scrolling ends here--> 
+            
+            
+        </div>
+        
+        
+        
+        <footer>
+<!--		  <div>&copy; 2017 ELICIA LIM, ALL RIGHTS RESERVED.</div>-->
+            <div>&copy; 2017 Elicia Lim, All Rights Reserved.</div>
+        </footer>
+        
+        
+        
+        
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!--        <a href="../../index.html" class="fa fa-home"> Home</a>-->
+        <a href="../../index.html">Home</a>
+            <br/>
+        <a href="../about/About.html">Biography</a>
+            <br/>
+        <a href="../myworks/myworks.html">My Works</a>
+            <br/>
+        <a href="../involvements/involvements.html">Activities</a>
+            <br/>
+        <a href="../contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+
+        
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+       
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+            
+            // ---------------------slideshow------------
+            $("#slideshowRo > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideshowRo > div:first')
+            .fadeOut(800)
+            .next()
+            .fadeIn(800)
+            .end()
+            .appendTo('#slideshowRo');
+        }, 1500);
+            
+            // ---------------------slideshow------------
+</script>
+    </body>
+</html>

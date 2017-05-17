@@ -1,0 +1,474 @@
+/*box-sizing property*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+
+
+
+/*----------------------------------# Unique ID----------------------------------*/
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*.classes for multiple elements*/
+/*--------slide animation---------*/
+#animationslide
+{
+/*
+    width: 10px;
+    height: 10px;
+*/
+    position: absolute;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;    
+    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {
+/*        left:100%;*/
+        opacity: 1;
+/*        z-index: 1;*/
+    }
+    100%  {
+/*        left:0%;*/
+        opacity: 1; 
+/*        z-index: 1;*/
+    }
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {
+/*        left:100%;*/
+        opacity: 1;
+        z-index: 1;
+    }
+    100%  {
+/*        left:0%;*/
+        opacity: 0; 
+        z-index: 1;
+    }
+  
+}
+/*--------slide animation---------*/
+
+span
+{
+    position: relative;
+    color: #f17e1d;
+    left: 40%;
+     font-family: 'UnifrakturCook', cursive;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #e1c14a;
+    top: 40%;
+  line-height: 1;
+
+    font-size: 120px;
+
+}
+
+.appear1
+{position: relative;
+    -webkit-animation-name: appear1st; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-name: appear1st;
+    animation-duration: 0.5s; 
+    animation-iteration-count: infinite; 
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes appear1st 
+{
+    0%   
+    {
+        
+        opacity:0;
+        
+    }
+    100%  
+    {
+        
+        opacity: 0; 
+        
+    }
+
+}
+@keyframes appear1st 
+{
+    0%   
+    {
+        
+        opacity: 0;
+        
+    }
+    100%  
+    {
+        
+        opacity: 0; 
+        
+    }
+
+}
+
+.overlay2 {
+   
+/*    padding-top: 30px;*/
+    
+    width: 100%;
+    height: 100%;
+/*    background: #353e43;*/
+   background-image: url(Images/bgImage.jpg);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+.container {
+    max-width:1200px;
+    min-width: 500px;
+    max-height: 500px;
+    min-height: 480px;
+    margin:40px auto 40px auto;
+    background-color: none;
+
+  position:relative;
+/*  border: 2px solid black;*/
+}
+.bgimage {
+	/*background-image needs a width and a height of the div to display*/
+/*    float:left;*/
+	width:150px;
+	height: 350px;
+	background-image: url('Images/myflower2.png');
+	margin: 250px auto auto auto; /*top right btm left*/
+    position: fixed;
+    
+    
+    
+    -ms-animation-name: rotateF; 
+    -ms-animation-duration: 5s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    -webkit-animation-name: rotateF; 
+    -webkit-animation-duration: 5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: rotateF; 
+    -moz-animation-duration: 5s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+}
+
+@-webkit-keyframes rotateF
+{
+    from 
+    {
+        -webkit-transform: rotateY(0deg);
+    }
+    to 
+    {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@-moz-keyframes rotateF
+{
+    from 
+    {
+        -moz-transform: rotateY(0deg);
+    }
+    to 
+    {
+        -moz-transform: rotateY(360deg);
+    }
+}
+@-ms-keyframes rotateF
+{
+    from 
+    {
+        -ms-transform: rotateY(0deg);
+
+    }
+    to 
+    {
+        -ms-transform: rotateY(360deg);
+    }
+
+}
+
+
+.myportrait
+{
+    background-image: url('Images/myportrait.png');
+    width:250px;
+    height: 259px;
+    top: 24%;
+    left: 57.5%;
+    min-width: 8%;
+    position: fixed;   
+/*
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 3s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 3s;
+    -ms-transition-property: -ms-transform;
+    -ms-transition-duration: 3s;
+*/
+    -ms-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+    transition: 1s ease;
+    
+    border-radius: 10px;
+    border: solid 2px #615f61;
+    box-shadow: 1.8px 1.8px #9e9d9e;
+}
+/*
+.myportrait2
+{
+    width:250px;
+    height: 259px;
+       top: 24%;
+    left: 57.5%;
+    
+    min-width: 10%;
+    border-radius: 10px;
+    border: solid 2px #615f61;
+    position: fixed;
+    box-shadow: 1.8px 1.8px #9e9d9e;
+    z-index: -1;
+    
+    
+}
+*/
+.myportrait:hover 
+{
+/*   rotation code from http://cssdeck.com/labs/css3rotation*/
+    /*    3d transform*/
+    /* IE 9 */
+    /* Safari */
+/*
+     -ms-transform: rotateY(180deg); 
+    -webkit-transform: rotateY(180deg); 
+    transform: rotateY(180deg);
+*/
+/*
+    -ms-animation-name: rotateP; 
+    -ms-animation-duration: 2s; 
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+    
+    -webkit-animation-name: rotateP; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: rotateP; 
+    -moz-animation-duration: 2s; 
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+*/
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
+    transition: 1s ease;
+    
+    
+    
+}
+@-webkit-keyframes rotateP
+{
+    from 
+    {
+        -webkit-transform: rotateY(0deg);
+    }
+    to 
+    {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@-moz-keyframes rotateP
+{
+    from 
+    {
+        -moz-transform: rotateY(0deg);
+    }
+    to 
+    {
+        -moz-transform: rotateY(360deg);
+    }
+}
+@-ms-keyframes rotateP
+{
+    from 
+    {
+        -ms-transform: rotateY(0deg);
+    }
+    to 
+    {
+        -ms-transform: rotateY(360deg);
+    }
+   
+}
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+html {
+/*  background: url('Images/finalbgv2.png') repeat ;*/
+    background: url('Images/bgImage.jpg'); /*http://www.hbc333.com/image-blur/47440956.html*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body
+{
+    font-family: 'Cinzel', serif;
+    
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+/*    color: #5f6557;*/
+    width: 100%;
+/*    height: 100px;*/
+    padding: 10px;
+/*    margin-top: 50px;*/
+    border-top: dashed 1.2px ;
+    text-align: right;
+    text-shadow: 0.6px 0.6px 0.8px #313a41;
+    font-weight: 600;
+}
+header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    border-top: dashed 1.2px;
+    text-align: right;
+    
+    font-size:30px;
+    cursor:pointer;
+    color:#f17e1d;
+    opacity: 0.8;
+    text-shadow: 3px 3px 3px #e1c14a;
+    
+    
+}
+table
+{
+    position:fixed;
+    left: 350px;
+    top: 190px;
+/*
+    top: 34%;
+    left: 20.5%;
+*/
+  
+}
+th
+{
+    font-size: 80px;
+
+
+    font-family: 'UnifrakturCook', cursive;
+    color: black;
+    text-shadow: 3px 3px grey;
+ 
+}
+tr
+{
+
+    font-family: 'UnifrakturCook', cursive;
+    color: #313131;
+    font-size: 25px;
+    text-align: right;
+    text-shadow: 2px 2px grey;
+}
+/*
+section
+{
+    float:right;
+    right: 20%;
+    margin-top: 60px;
+    min-width: 10%;
+    border-radius: 10px;
+    border: solid 2.5px #615f61;
+    position: fixed;
+    
+
+}
+*/
+/*----------------------------------Selectors & declarations from w3schools----------------------------------*/
+
+
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(101,95,81,0.5);
+/*    background-color: #655f51;*/
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+/*    opacity: 0.5;*/
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: #f17e1d;
+    display: block;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f8f162;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*----------------------------------Sidebar---------------------------------------------------*/

@@ -1,0 +1,263 @@
+/*box-sizing property*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*----------------------------------# Unique ID----------------------------------*/
+/* # = unique ID*/
+
+
+
+/*----------------------------------# Unique ID----------------------------------*/
+.container_12 {
+/*    background: #ededed;*/
+/*    color: white;*/
+    text-align: left;
+/*    font-size: 20px;*/
+/*    line-height: 250px;*/
+    height: 100%;
+    
+    
+}
+
+.photos {
+    width: 100%;
+}
+
+
+#slideshowRo3 {
+/*  margin: 80px auto;*/
+  position: relative;
+/*
+  width: 300px;
+  height: 300px;
+*/
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+/*    border: 15px ;*/
+
+}
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+/*.classes for multiple elements*/
+.container {
+    max-width:1000px;
+    min-width: 500px;
+/*    max-height: 800px;*/
+    min-height: 350px;
+    margin:40px auto 40px auto;
+    background-color: none;
+
+  position:relative;
+    padding: 10px;
+/*  border: 2px solid black;*/overflow: hidden;
+}
+
+
+/*----------------------------------Classes, Multiple Elements----------------------------------*/
+
+/*----------------------------------Selectors & declarations----------------------------------*/
+
+html {
+    background: url('../../Images/bgImage_about.jpg'); /*Designed by Freepik | http://www.freepik.com/index.php?goto=74&idfoto=1111622*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body
+{
+    font-family: 'Cinzel', serif;
+    
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+/*    color: #5f6557;*/
+    width: 100%;
+/*    height: 100px;*/
+    padding: 10px;
+/*    margin-top: 50px;*/
+/*    border-top: dashed 1.2px ;*/
+    text-align: right;
+/*    text-shadow: 0.6px 0.6px 0.8px #313a41;*/
+/*    text-shadow: 1px 1px 1px #313a41;*/
+    font-weight: 600;
+    background: rgba(245,230,217,0.5);
+}
+header /*sidebar*/
+{
+    position:fixed;
+    top:0;
+    left:0;
+    border-top: dashed 1.2px;
+    text-align: right;
+    
+    font-size:30px;
+    cursor:pointer;
+/*    color:#8597a1;*/
+    opacity: 0.8;
+/*    text-shadow: 3px 3px 3px #7e8b95;*/text-shadow: 2px 2px 2px #313a41;
+    
+    
+}
+h1
+{
+    text-shadow: 2px 2px 2px #313a41;
+}
+p
+{
+    position: absolute;
+    font-weight: 600;
+    font-size: 60px;
+    right: 30px;
+    top: -40px;
+    text-shadow: 1.5px 1.5px 1.5px #313a41;
+}
+p a 
+{
+    text-decoration: none;
+    color: black;
+}
+p a:hover
+{
+    opacity: 0.5;
+}
+/*----------------------------------Selectors & declarations from w3schools----------------------------------*/
+
+
+/*----------------------------------Sidebar from w3schools---------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(133,151,161,0.5);
+/*    background-color: #655f51;*/
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+/*    opacity: 0.5;*/
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #313a41;
+    color: #0b82b4;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f17995;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*----------------------------------Sidebar---------------------------------------------------*/
+/*------modal----- http://stackoverflow.com/questions/41275958/modal-image-galleries-multiple-images*/
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+     width: 100%;
+/*    cursor: pointer;*/
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    min-width: 30%;
+    max-width: 35%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
