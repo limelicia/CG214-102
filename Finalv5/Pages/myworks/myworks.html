@@ -1,0 +1,196 @@
+<!--Homework Assignment Elicia Lim Midterm-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> ELI &#124; Collections &middot; Projects </title>
+<!--       <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|UnifrakturCook:700" rel="stylesheet"> 
+        <!--linking to external css file-->
+        <link href="style_myworks.css" type="text/css" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link href="960_12_col.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../../Images/icon.png">
+    </head>
+    <!----------------------------------------------->
+    
+    <body>
+  
+        <!--Background audio-->
+        <!--       credit: Music: http://www.bensound.com-->
+            <audio src="../../Audio/bensound-pianomoment.mp3" type="audio/mpeg" autoplay loop></audio>
+      
+    
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+            <br/>
+        <a href="../about/About.html">Biography</a>
+            <br/>
+        <a href="../involvements/involvements.html">Activities</a>
+            <br/>
+        <a href="../contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+        
+        <!----------------------------------------------->
+        <!--HEADER-->
+        
+        <div class="container">
+            <header onclick="openNav()">&#9776; </header> <!-- &#9776; = draw 3 lines-->
+<!-- ---------->            
+            <h1>Collections</h1>
+            
+            <div class="container_12" >
+<!--
+      <div id="slideshowRo">
+   <div>
+     <img src="http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+   </div>
+   <div>
+     <img src="http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+</div>
+-->
+               <div class="grid_4" style="cursor:crosshair">
+                   <a href="../rococo/rococo.html" class="text">Rococo</a>
+                   <div id="slideshowRo" >                 
+<!--     Rococo-->
+                   <div>
+                       <a href="../rococo/rococo.html"><img class="photos" src="../../Images/collections/Rococo/inspi1.jpg"></a>     
+                   </div>
+                   <div>
+                       <a href="../rococo/rococo.html"><img class="photos" src="../../Images/collections/Rococo/inspi2.jpg"></a>
+                   </div>
+                   <div>
+                       <a href="../rococo/rococo.html"><img class="photos" src="../../Images/collections/Rococo/inspi3.jpg"></a>
+                   </div>
+                   <div>
+                       <a href="../rococo/rococo.html"><img class="photos" src="../../Images/collections/Rococo/inspi4.jpg"></a>
+                   </div>
+                    </div>
+                </div>
+<!-------- Shards-->
+                <div class="grid_4" style="cursor:crosshair">
+                    <a href="../shards/shards.html" class="text">Shards</a>
+                   <div id="slideshowRo2" >
+                   <div>
+                       <a href="../shards/shards.html"><img class="photos" src="../../Images/collections/Shards/inspi1.jpg"></a>
+                   </div>
+                   <div>
+                       <a href="../shards/shards.html"><img class="photos" src="../../Images/collections/Shards/inspi2.jpg"></a>
+                   </div>
+                   <div>
+                       <a href="../shards/shards.html"><img class="photos" src="../../Images/collections/Shards/inspi3.jpg"></a>
+                   </div>
+                   <div>
+                       <a href="../shards/shards.html"><img class="photos" src="../../Images/collections/Shards/inspi4.jpg"></a>
+                   </div>
+                       </div>
+               </div>
+                
+                <!-------->
+                <div class="grid_4" id="slideshowRo3">
+                   <div>
+                        Coming Soon
+                   </div>
+                   
+               </div>
+<!--                ------>
+                
+            </div>
+        <div class="clearrow"></div>
+<!-- ---------->
+            <h1>Projects</h1>
+            
+            <div class="container_12"  >
+       
+               <div class="grid_4" style="cursor:crosshair" >
+                        <a href="../handbags/handbags.html" class="text">Handbags</a>
+                   <div id="slideshowRo3">
+                        <a href="../handbags/handbags.html"><img class="photos" src="../../Images/projects/handbags.png"></a>
+                    </div>
+               </div>
+
+                <div class="grid_4" style="cursor:crosshair" >
+                        <a href="../footwears/footwears.html" class="text">Footwears</a>
+                   <div id="slideshowRo3">
+                        <a href="../footwears/footwears.html"><img class="photos" src="../../Images/projects/footwears.png"></a>
+                    </div>
+               </div>
+                
+                <div class="grid_4" style="cursor:crosshair" >
+                        <a href="../others/others.html" class="text">Others</a>
+                   <div id="slideshowRo3">
+                        <a href="../others/others.html"><img class="photos" src="../../Images/projects/others.png"></a>
+                    </div>
+               </div>
+                
+            </div>
+            <div class="clearrow"></div>
+        </div>
+        
+        
+        
+        <footer>
+<!--		  <div>&copy; 2017 ELICIA LIM, ALL RIGHTS RESERVED.</div>-->
+            <div>&copy; 2017 Elicia Lim, All Rights Reserved.</div>
+        </footer>
+        
+        
+        
+        
+        
+
+        
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+       
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+            
+        // ---------------------slideshow------------
+            $("#slideshowRo > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideshowRo > div:first')
+            .fadeOut(800)
+            .next()
+            .fadeIn(800)
+            .end()
+            .appendTo('#slideshowRo');
+        }, 1500);
+            
+            //----
+            $("#slideshowRo2 > div:gt(0)").hide();
+
+        setInterval(function() {
+          $('#slideshowRo2 > div:first')
+            .fadeOut(800)
+            .next()
+            .fadeIn(800)
+            .end()
+            .appendTo('#slideshowRo2');
+        }, 1500);
+            // ---------------------slideshow------------
+</script>
+    </body>
+</html>

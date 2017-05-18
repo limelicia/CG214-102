@@ -1,0 +1,161 @@
+<!--Homework Assignment Elicia Lim Midterm-->
+<!DOCTYPE html>
+
+<!--language declaration important for search engines-->
+<html lang="en-US">
+
+    <head> 
+        <title> ELI &#124; Handbags </title>
+<!--       <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|UnifrakturCook:700" rel="stylesheet"> 
+        <!--linking to external css file-->
+        <link href="style_handbags.css" type="text/css" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link href="960_12_col.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="../../Images/icon.png">
+    </head>
+    <!----------------------------------------------->
+    
+    <body>
+  
+        <!--Background audio-->
+        <!--       credit: Music: http://www.bensound.com-->
+            <audio src="../../Audio/bensound-pianomoment.mp3" type="audio/mpeg" autoplay loop></audio>
+      
+    
+        <!--side bar-->
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+            <br/>
+        <a href="../about/About.html">Biography</a>
+            <br/>
+        <a href="../myworks/myworks.html">My Works</a>
+            <br/>
+        <a href="../involvements/involvements.html">Activities</a>
+            <br/>
+        <a href="../contact/Contact.html">Contact</a>
+        </div>
+        <!--side bar-->
+        
+        <!----------------------------------------------->
+        <!--HEADER-->
+        
+        <div class="container">
+            <header onclick="openNav()">&#9776; </header> <!-- &#9776; = draw 3 lines-->
+            <p><a href="../myworks/myworks.html">&#8617;</a></p>
+            
+<!-- ---------->
+            <h1>Handmade Handbags</h1>
+            
+            <div class="container_12"  >
+                
+                <div class="grid_4" style="cursor:crosshair" >
+                   <div id="slideshowRo3">
+<!--                        <img class="photos" src="images/hb_5.png">-->
+                       <img class="myImg" src="images/hb_5.png" alt="Tote Bag" >
+                    </div>
+               </div>
+                
+               <div class="grid_4" style="cursor:crosshair" >
+                   <div id="slideshowRo3">
+<!--                        <img class="photos" src="images/hb_1.png">-->
+                       <img class="myImg" src="images/hb_1.png" alt="Constructed Bag" >
+                    </div>
+               </div>
+
+                <div class="grid_4" style="cursor:crosshair" >
+                   <div id="slideshowRo3">
+<!--                        <img class="photos" src="images/hb_2.jpg">-->
+                       <img class="myImg" src="images/hb_2.jpg" alt="Semi-constructed Bag" >
+                    </div>
+               </div>
+                
+                <div class="grid_4" style="cursor:crosshair" >
+                   <div id="slideshowRo3">
+<!--                        <img class="photos" src="images/hb_3.jpg">-->
+                       <img class="myImg" src="images/hb_3.jpg" alt="Box Bag" >
+                    </div>
+               </div>
+                
+                <div class="grid_4" style="cursor:crosshair" >
+                   <div id="slideshowRo3">
+<!--                        <img class="photos" src="images/hb_4.jpg">-->
+                       <img class="myImg" src="images/hb_4.jpg" alt="Envelope Bag" >
+                    </div>
+               </div>
+                
+            </div>
+            <div class="clearrow"></div>
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+        
+        <footer>
+<!--		  <div>&copy; 2017 ELICIA LIM, ALL RIGHTS RESERVED.</div>-->
+            <div>&copy; 2017 Elicia Lim, All Rights Reserved.</div>
+        </footer>
+        
+        
+        
+        
+        
+
+        
+        <!--Javascript-->
+<!--        //script for jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--        //end jquery-->
+        <script>
+       
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            
+//      -----------------------------------------------Javascript side bar from w3schools----------------------------------------------
+            
+            //modal begins
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+       //modal ends
+</script>
+    </body>
+</html>
